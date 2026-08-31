@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecoverAI - Agentic Revenue Recovery</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <div class="logo">
+                <span class="logo-icon">✨</span>
+                <h1>RecoverAI</h1>
+            </div>
+            <button id="start-btn" class="primary-btn">Start Recovery Agent</button>
+        </header>
+
+        <div class="dashboard">
+            <div class="stats-panel">
+                <div class="stat-card">
+                    <h3>Transactions</h3>
+                    <p id="stat-total">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Recovered</h3>
+                    <p id="stat-recovered" class="success">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Escalated</h3>
+                    <p id="stat-escalated" class="warning">0</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Progress</h3>
+                    <div class="progress-bar-container">
+                        <div id="progress-bar" class="progress-bar"></div>
+                    </div>
+                    <p id="progress-text">0%</p>
+                </div>
+            </div>
+
+            <div class="feed-container">
+                <h2>Agent Audit Trail</h2>
+                <div id="feed" class="feed">
+                    <div class="empty-state">Ready to process transactions...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>

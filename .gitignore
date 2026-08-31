@@ -1,0 +1,16 @@
+# Environments
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# IDEs
+.vscode/
+.idea/
+
+# Data
+data/transactions.json
